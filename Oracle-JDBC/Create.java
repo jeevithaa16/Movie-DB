@@ -25,3 +25,10 @@ public class Create
 		}
 	}
 }
+
+/*
+javac -cp ojdbc8.jar; Create.java
+java -cp ojdbc8.jar; Create
+
+o/p: Table created successfully
+*/

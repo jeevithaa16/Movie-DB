@@ -28,3 +28,10 @@ public class Insert
 		}
 	}
 }
+
+/*
+javac -cp ojdbc8.jar; Insert.java
+java -cp ojdbc8.jar; Insert
+
+o/p: Inserted records into the table
+*/

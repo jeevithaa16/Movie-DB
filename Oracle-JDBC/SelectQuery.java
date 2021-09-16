@@ -23,3 +23,13 @@ public class SelectQuery
 		}
 	}
 }
+
+/*
+javac -cp ojdbc8.jar; SelectQuery.java
+java -cp ojdbc8.jar; SelectQuery
+
+o/p: 
+Movie Name
+Kaadhal Mannan
+Mankatha
+*/

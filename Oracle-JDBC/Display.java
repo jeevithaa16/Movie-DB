@@ -28,3 +28,9 @@ public class Display
 		}
 	}
 }
+
+/*
+javac -cp ojdbc8.jar; Display.java
+java -cp ojdbc8.jar; Display
+
+*/
