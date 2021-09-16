@@ -1,0 +1,87 @@
+SQL> create table movies(
+name varchar(255),
+actor varchar(255),                     /*to create a table*/
+actress varchar(255),
+year number(20),
+director varchar(255)
+);
+
+------------------------------------------------------------------------
+
+SQL> insert into movies values(
+'The Matrix',
+'Keanu Reeves',                      /*to insert values in a table*/
+'Carrie',
+1999,
+'Lana Lilly'
+);
+
+1 row created. 
+
+SQL> insert into movies values(
+  2  '96',
+  3  'Vijay Sethupathi',
+  4  'Trisha',
+  5  2018,
+  6  'Prem Kumar'
+  7  );
+
+1 row created.
+
+SQL> insert into movies values(
+  2  'Speed',
+  3  'Keanu Reeves',
+  4  'Sandra Bullock',
+  5  1994,
+  6  'Jon de Bont'
+  7  );
+
+1 row created.
+
+SQL> insert into movies values(
+  2  'kaadhal Mannan',
+  3  'Ajith Kumar',
+  4  'Maanu',
+  5  1998,
+  6  'Saran'
+  7  );
+
+1 row created.
+
+SQL> insert into movies values(
+  2  'Mankatha',
+  3  'Ajith Kumar',
+  4  'Trisha',
+  5  2011,
+  6  'Venkat Prabhu'
+  7  );
+
+1 row created.
+
+---------------------------------------------------------------------------------------------
+
+/* to display all entries */
+
+
+SQL> select * from movies;
+
+NAME                ACTOR                ACTRESS                    YEAR DIRECTOR
+-------------------- -------------------- -------------------- ---------- --------------------
+The Matrix           Keanu Reeves         Carrie                     1999 Lana Lilly
+96                   Vijay Sethupathi     Trisha                     2018 Prem Kumar
+Speed                Keanu Reeves         Sandra Bullock             1994 Jon de Bont
+kaadhal Mannan       Ajith Kumar          Maanu                      1998 Saran
+Mankatha             Ajith Kumar          Trisha                     2011 Venkat Prabhu
+
+
+-----------------------------------------------------------------------------------------------
+
+/*  to select only particular entries */
+
+
+SQL> select name from movies where actor = 'Ajith Kumar';
+
+NAME 
+-------------------
+kaadhal Mannan
+Mankatha
